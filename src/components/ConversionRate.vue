@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { AxiosRequestConfig } from 'axios';
 import { ref, watch } from 'vue';
 import { request, generateRequest } from '../services/axiosService';
 // The currency code used here is passed via props
@@ -10,11 +9,11 @@ const rate = ref(0.0);
 // When the props for this component (intended currency code) get modified,
 // a request needs to be made for the information necessary to display in this component:
 watch(props, async (newProps) => {
-  const requestGet: AxiosRequestConfig = generateRequest(
-    'get',
-    '/latest.json',
-    { base: 'USD', symbols: newProps.currencyCode, show_alternative: 'false' }
-  );
+  const requestGet = generateRequest('get', '/latest.json', {
+    base: 'USD',
+    symbols: newProps.currencyCode,
+    show_alternative: 'false',
+  });
   await request(requestGet).then((response) => {
     rate.value = response.data.rates[newProps.currencyCode];
   });

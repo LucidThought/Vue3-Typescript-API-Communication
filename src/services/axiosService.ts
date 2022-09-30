@@ -2,7 +2,6 @@ import axios from 'axios';
 import type { AxiosRequestConfig } from 'axios';
 import CONSTANTS from './constants';
 
-// TODO: Make a functin that builds an AxiosRequestConfig
 // This will let components call the request function below
 //  without having to import the AxiosRequestConfig object
 function generateRequest(

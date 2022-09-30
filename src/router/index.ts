@@ -1,4 +1,3 @@
-import { AxiosRequestConfig } from 'axios';
 import { createRouter, createWebHistory } from 'vue-router';
 import { generateRequest, request } from '../services/axiosService';
 import { useMainStore } from '../stores/store';
@@ -21,11 +20,10 @@ router.beforeEach(async (to, from) => {
   if (to.path === '/') {
     // On the homepage a list of currencies is required before the page can be loaded
     // Generate reequest for list of currencies:
-    const requestGet: AxiosRequestConfig = generateRequest(
-      'get',
-      '/currencies.json',
-      { show_alternative: false, show_inactive: false }
-    );
+    const requestGet = generateRequest('get', '/currencies.json', {
+      show_alternative: false,
+      show_inactive: false,
+    });
     // After request for list of currencies completes, reorganize and store the result:
     await request(requestGet).then((response) => {
       setCurrencies(
