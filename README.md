@@ -1,3 +1,11 @@
+### To run this project locally (after installing the npm package manager on your machine):
+
+1. First you need to register for an API key at https://openexchangerates.org/ (Click "Sign Up" and then use the 'Free Plan' link above the prices for paid plans)
+1. After signing up you will get an API key to use with this project. From your account on the site go to 'App IDs' and copy your App ID
+1. Paste your App ID over the CHANGE_ME text in the `src/services/constants.ts` file
+1. Now that you have you App ID configured, you can install packages with `npm i` at the terminal (Assuming you have npm installed on your local computer) and then `npm run dev` to start the application.
+1. The terminal will show you what port on localhost the project is running!
+
 # Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.

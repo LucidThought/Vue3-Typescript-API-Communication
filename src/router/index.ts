@@ -13,9 +13,6 @@ const router = createRouter({
       component: HomeView,
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-    return { top: 0 };
-  },
 });
 
 router.beforeEach(async (to, from) => {
