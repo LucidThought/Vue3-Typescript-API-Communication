@@ -7,7 +7,7 @@ const mainStore = useMainStore();
 // Retrieve the list of currencies from the store
 const currencies: { code: string; name: string }[] = mainStore.getCurrencies;
 const selectedCurrency = ref('');
-// When teh select value changes, set the ref for use in the component
+// When the select value changes, set the ref for use in the component
 function currencyChosen(event: any) {
   selectedCurrency.value = event.target.value;
 }
