@@ -27,7 +27,6 @@ function generateRequest(
 async function request(options: AxiosRequestConfig) {
   options = {
     ...options,
-    // withCredentials: false,
   };
   let response = await axios(options).then((response) => {
     return response;
