@@ -1,6 +1,4 @@
 import { defineStore } from 'pinia';
-import { useStorage } from '@vueuse/core';
-// import Currency from '../interfaces/currency';
 
 export const useMainStore = defineStore('main', {
   state: () => ({
