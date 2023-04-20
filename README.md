@@ -1,4 +1,8 @@
-### To run this project locally (after installing the npm package manager on your machine):
+# Summary
+
+This project is a simple implementation of a front-end system written in Vue3 using 'script setup' and the composition API; it takes advantage of the benefits TypeScript provides. It communicates with a back-end API uing Axios an a pre-shared key (obtained from openexchangerates.org, instructions below). This project was initially provided as an job interview challenge to demonstrate JavaScript knowledge.
+
+## To run this project locally (after installing the npm package manager on your machine):
 
 1. First you need to register for an API key at https://openexchangerates.org/ (Click "Sign Up" and then use the 'Free Plan' link above the prices for paid plans)
 1. After signing up you will get an API key to use with this project. From your account on the site go to 'App IDs' and copy your App ID
