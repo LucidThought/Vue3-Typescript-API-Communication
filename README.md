@@ -1,6 +1,6 @@
 # Summary
 
-This project is a simple implementation of a front-end system written in Vue3 using 'script setup' and the composition API; it takes advantage of the benefits TypeScript provides. It communicates with a back-end API uing Axios an a pre-shared key (obtained from openexchangerates.org, instructions below). This project was initially provided as an job interview challenge to demonstrate JavaScript knowledge.
+This project is a simple implementation of a front-end system written in Vue3 using 'script setup' and the composition API; it takes advantage of the benefits TypeScript provides. It communicates with a back-end API uing Axios an a pre-shared key (obtained from openexchangerates.org, instructions below). This project was initially provided as a job interview challenge to demonstrate JavaScript knowledge.
 
 ## To run this project locally (after installing the npm package manager on your machine):
 
